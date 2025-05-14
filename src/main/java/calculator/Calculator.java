@@ -13,6 +13,21 @@ public class Calculator {
     return x * y;
   }
 
+  
+  public static double a(double x, double y) {
+    return x * y;
+  }
+
+
+  public static double b(double x, double y) {
+    return x * y;
+  }
+
+
+  public static double c(double x, double y) {
+    return x * y;
+  }
+
   public static double divide(double x, double y) {
     if (y == 0) {
       System.out.println("Cannot divide by 0");

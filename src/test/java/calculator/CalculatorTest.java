@@ -43,4 +43,9 @@ public class CalculatorTest {
     assertEquals(Calculator.divide(-4, 2.0), -2.0, DELTA);
     // assertEquals(Calculator.divide(2.0, 0), 0.0, DELTA);
   }
+
+  @Test
+  public void testA() {
+    assertEquals(Calculator.a(1, 2), 2.0, DELTA);
+  }
 }

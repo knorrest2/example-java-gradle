@@ -1,0 +1,21 @@
+name: Collect/upload coverage
+on: 
+  push:
+    branches:   
+      - main
+  pull_request:
+    branches:
+      - main
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up JDK 18
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'oracle'
+          java-version: 18
+      - name: Install dependencies, run tests, and collect coverage
+        run: gradle build
